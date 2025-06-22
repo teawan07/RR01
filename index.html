@@ -964,10 +964,7 @@
   const interval = setInterval(() => {
     if (Date.now() - start > limit) {
       clearInterval(interval);
-      document.body.innerHTML = `
-        <div style="color:white;font-size:24px;text-align:center;margin-top:20%;">
-          ลิงก์นี้หมดอายุแล้ว
-        </div>`;
+window.location.replace("expired.html");
     }
   }, 1000);
 </script>
